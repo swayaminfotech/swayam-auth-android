@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.swayamauth.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.swayamauth.fragment.editprofile.EditProfileFragment"
+        android:label="@string/menu_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.swayamauth.fragment.changepassword.ChangePasswordFragment"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.swayamauth.fragment.aboutus.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>

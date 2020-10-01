@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.swayamauth.activity.SignUpActivity">
+
+    <include layout="@layout/layout_header"
+        android:id="@+id/header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/comman_margin"
+            android:orientation="vertical" >
+
+            <FrameLayout android:id="@+id/flImageChoose"
+                android:layout_width="@dimen/choose_profile_layout_height"
+                android:layout_height="@dimen/choose_profile_layout_height"
+                android:layout_gravity="center" >
+
+                <ImageView android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/height_choose_profile"
+                    android:layout_height="@dimen/height_choose_profile"
+                    android:layout_gravity="center"
+                    android:layout_margin="60dp"
+                    android:src="@drawable/profile_placeholder" />
+
+                <ImageView
+                    android:id="@+id/ivImageChoose"
+                    android:layout_width="@dimen/add_image_layout_height"
+                    android:layout_height="@dimen/add_image_layout_height"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:tint="@color/colorPrimary"
+                    app:backgroundTint="@color/white"
+                    android:layout_gravity="right|bottom"
+                    app:srcCompat="@drawable/baseline_add_circle_white" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_firstname" />
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_lastname" />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_email_address" />
+
+                <EditText
+                    android:id="@+id/etEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_about_us" />
+
+                <EditText
+                    android:id="@+id/etAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_gender" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/form_value_field_spacing_top"
+                    android:orientation="horizontal" >
+
+                    <com.swayamauth.views.RegularRadioButton
+                        android:id="@+id/radMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/label_color"
+                        android:text="@string/label_male" />
+
+                    <com.swayamauth.views.RegularRadioButton
+                        android:id="@+id/radFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/form_value_field_spacing_left"
+                        android:textColor="@color/label_color"
+                        android:text="@string/label_female" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_password" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.swayamauth.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/label_text_size"
+                    android:layout_marginTop="@dimen/edit_text_label_spacing_top"
+                    android:text="@string/label_confirm_password" />
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/edit_text_padding"
+                    android:layout_marginTop="@dimen/edit_text_spacing_top"
+                    android:background="@drawable/bg_border_edit_text_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                    <com.swayamauth.views.RegularCheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/label_text_size"
+                        android:text="@string/i_agree" />
+
+                    <com.swayamauth.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/label_text_size"
+                        android:layout_marginLeft="2dp"
+                        android:text="@string/terms_use"
+                        android:id="@+id/tvTermsOfUse"
+                        android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_bottom_authentication_button"
+                android:layout_marginLeft="@dimen/margin_button_left_right"
+                android:layout_marginRight="@dimen/margin_button_left_right"
+                android:background="@drawable/bg_authentication_button">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/prgLoader" />
+
+                <com.swayamauth.views.RegularButton
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/authentication_button_text_size"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="@string/sign_up"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

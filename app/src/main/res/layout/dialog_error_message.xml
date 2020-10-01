@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/comman_margin"
+    android:gravity="center"
+    android:background="@drawable/bg_error_dialog">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comman_margin"
+        android:layout_marginRight="@dimen/comman_margin"
+        android:orientation="vertical" >
+
+        <com.swayamauth.views.MediumTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvErrorTitle"
+            android:textSize="@dimen/label_text_size"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textColor="@color/error_border" />
+
+        <com.swayamauth.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvErrorLabel"
+            android:textSize="@dimen/label_text_size"
+            android:layout_gravity="left"
+            android:textColor="@color/dark_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>
